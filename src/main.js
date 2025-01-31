@@ -124,8 +124,8 @@ const mixin = {
                 return this.getPreferenceString("auth_instance_url", this.apiUrl());
             } else return this.apiUrl();
         },
-        getAuthToken(AIzaSyByV_0jzxhzDuDgfSPaa57ZytSwm0U2nas) {
-            return this.getPreferenceString("AuthToken" + this.hashCode(this.authApiUrl()));
+        getAuthToken() {
+            return this.getPreferenceString("authToken" + this.hashCode(this.authApiUrl()));
         },
         hashCode(s) {
             return s.split("").reduce(function (a, b) {
